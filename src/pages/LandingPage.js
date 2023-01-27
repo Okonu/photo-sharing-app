@@ -1,7 +1,9 @@
+import { BrowserRouter  } from 'react-router-dom';
 import React, {useState, useEffect } from 'react';
 import './landingPage.css';
 import {motion, AnimatePresence } from "framer-motion"
 import Modal from './Modal';
+
 
 function LandingPage(){
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -16,7 +18,7 @@ function LandingPage(){
         <div>
             <h1>Photo Sharing App</h1>
             <p>This App Allows users to create and share albums of their photos. Sign Up or Login to get started!</p>
-            <motion.a href="/login"
+            <motion.a href="./login"
             whileHover={{scale: 1.1}}
             whileTap={{scale: 0.9}}
             className="cta-button">Login</motion.a>
@@ -36,4 +38,10 @@ function LandingPage(){
     );
 }
 
-export default LandingPage;
+export default function App(){
+    return(
+        <BrowserRouter>
+            <LandingPage/>
+        </BrowserRouter>
+    )
+};
