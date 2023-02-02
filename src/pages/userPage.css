@@ -1,0 +1,16 @@
+.UserPage {
+    text-align: center;
+    padding: 50px;
+}
+ h1, h2 {
+    margin-bottom: 40px;
+ }
+
+ ul{
+    list-style: none;
+    padding: 0;
+ }
+
+ li {
+    margin-bottom: 20px;
+ }
