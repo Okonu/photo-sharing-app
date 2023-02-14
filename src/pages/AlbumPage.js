@@ -1,5 +1,6 @@
 import React, {useState, useEffect } from "react";
 import axios from "axios";
+import './albumPage.css';
 
 function AlbumPage({match}) {
     const [album, setAlbum ] = useState({});
