@@ -28,13 +28,13 @@ const Modal = ({ children, setIsModalOpen }) => {
         exit="hidden"
         >
             {children}</motion.div>
-        {/* // <div className="modal-background">
+        </>
+        /* // <div className="modal-background">
         //     <div className="modal-content">
         //         {children}
         //         <button onClick={()=>setIsModalOpen(false)}>Close</button>
         //     </div>
-        // </div> */}
-        </>
+        // </div> */
     );
 };
 
